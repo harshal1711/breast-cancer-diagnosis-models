@@ -1,10 +1,10 @@
-## 🧠 Project: Breast Cancer Classification Using ML
+## Project: Breast Cancer Classification Using ML
 
 This project builds and evaluates three different classification models—**Decision Tree**, **Logistic Regression**, and **K-Nearest Neighbors (KNN)**—to predict whether a tumor is malignant or benign using the UCI Breast Cancer Wisconsin dataset.
 
 ---
 
-### ✅ Key Highlights
+### Key Highlights
 
 - **Dataset**: [UCI Breast Cancer Wisconsin Diagnostic Data](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
 - **Target Variable**: Diagnosis (`M` = Malignant, `B` = Benign; encoded as 1 and 0)
@@ -12,7 +12,7 @@ This project builds and evaluates three different classification models—**Deci
 
 ---
 
-### 🔍 Preprocessing & Feature Engineering
+### Preprocessing & Feature Engineering
 
 - **Correlated Feature Removal**: Performed pairwise correlation checks using a threshold of 0.80. Dropped highly correlated pairs (e.g., `radius` vs `perimeter`, `area`, `worst_area`, etc.) to reduce multicollinearity.
 - **Outlier Detection**: Applied the IQR method to flag and examine features with excessive outliers, such as `SE_radius` and `SE_smoothness`.
@@ -21,7 +21,7 @@ This project builds and evaluates three different classification models—**Deci
 
 ---
 
-### ⚙️ Models Evaluated
+### Models Evaluated
 
 - **Decision Tree**
   - Tuned `max_depth`, `min_samples_split`, and `min_samples_leaf`
@@ -40,7 +40,7 @@ This project builds and evaluates three different classification models—**Deci
 
 ---
 
-### 📊 Model Performance (Test Set)
+### Model Performance (Test Set)
 
 | Model                        | Accuracy | Malignant Recall | F1-Score |
 |-----------------------------|----------|------------------|----------|
@@ -50,7 +50,7 @@ This project builds and evaluates three different classification models—**Deci
 
 ---
 
-### 💡 Key Takeaways
+###  Key Takeaways
 
 - Logistic Regression with L1 regularization performed the best, especially in maximizing recall for malignant cases (critical in cancer prediction).
 - Correlation-based feature pruning improved generalization and helped reduce noise in KNN and tree-based models.
